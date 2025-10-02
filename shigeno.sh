@@ -101,7 +101,7 @@ cd
 chmod +x /etc/network/if-up.d/iptables
 
 # Setting up Squid Config
-apt-get install squid3 -y
+apt-get install squid -y
 wait
 echo '' > /etc/squid/squid.conf
 wait
