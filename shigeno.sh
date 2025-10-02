@@ -108,7 +108,7 @@ http_port 0.0.0.0:3128
 http_port 0.0.0.0:8000"| sudo tee /etc/squid/squid.conf
 
 # menu
-wget -O /usr/local/bin/menu "http://128.199.215.79/shigenomenu.sh"
+wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/shigenojay/Debian13/refs/heads/main/shigenomenu.sh"
 chmod +x /usr/local/bin/menu
 apt-get -y install vnstat
 apt install speedtest-cli
