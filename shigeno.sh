@@ -22,7 +22,7 @@ iptables -t nat -A POSTROUTING -s 10.8.0.0/16 -o eth0 -j MASQUERADE
 iptables -t nat -A POSTROUTING -s 10.8.0.0/16 -o venet0 -j SNAT --to-source `curl ipecho.net/plain`
 
 # download cert openvpn config
-wget http://128.199.215.79/shigeno.zip -O shigeno.zip
+wget https://github.com/shigenojay/Debian13/raw/refs/heads/main/shigeno.zip -O shigeno.zip
 unzip shigeno.zip
 rm zip*
 cp -r config/* /etc/openvpn
